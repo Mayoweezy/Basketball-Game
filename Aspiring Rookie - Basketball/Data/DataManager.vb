@@ -26,8 +26,9 @@ Namespace Data
             Return result
         End Function
 
-        Public Sub SaveGameData()
-
+        Public Sub SaveGameData(gameData As GameObjects, fileLocation As String)
+            Dim data As String = JsonConvert.SerializeObject(gameData)
+            File.WriteAllText(fileLocation, data)
         End Sub
 
         Public Function LoadGameData() As GameObjects

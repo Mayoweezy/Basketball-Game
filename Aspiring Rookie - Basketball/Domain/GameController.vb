@@ -38,7 +38,7 @@ Namespace Domain
 
             Return fullFixtures
         End Function
-
+        
         'Probably belongs in the UI
         Public Function GetCurrentFixturesAsDataTable() As DataTable
             Dim data = gameObjects.Fixtures.Item(gameObjects.Round)

@@ -90,16 +90,12 @@ D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.exe
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.xml
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.pdb
-D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\DataBankSkills.xml
-D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\DataBankSkillsSet.xml
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\League.accdb
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.exe
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.pdb
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.xml
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.vbprojResolveAssemblyReference.cache
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Awards.resources
-D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.AwardsPage.resources
-D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.DataBank.resources
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Form1.resources
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Game_Box.resources
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.ItemsOwned.resources

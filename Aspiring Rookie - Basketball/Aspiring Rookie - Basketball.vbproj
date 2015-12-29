@@ -145,7 +145,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SaveGameClass.vb" />
-    <Compile Include="ShopModule.vb" />
     <Compile Include="Shop.Designer.vb">
       <DependentUpon>Shop.vb</DependentUpon>
     </Compile>
@@ -226,7 +225,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BasketballRookie.xml" />
     <None Include="Data\CurrentGame\Teams.json" />
     <None Include="Data\GameConfig\ShopItems.json" />
     <Content Include="League.accdb">
