@@ -30,7 +30,6 @@ Partial Class Game_Box
         Me.ButPass = New System.Windows.Forms.Button()
         Me.ButShoot2pt = New System.Windows.Forms.Button()
         Me.ButDribble = New System.Windows.Forms.Button()
-        Me.ButHold = New System.Windows.Forms.Button()
         Me.ButRebound = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -72,11 +71,14 @@ Partial Class Game_Box
         Me.Label19 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ButPlayPause = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(328, 32)
+        Me.TextBox2.Location = New System.Drawing.Point(328, 54)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(31, 20)
         Me.TextBox2.TabIndex = 1
@@ -84,7 +86,7 @@ Partial Class Game_Box
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(228, 32)
+        Me.TextBox3.Location = New System.Drawing.Point(228, 54)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(31, 20)
         Me.TextBox3.TabIndex = 2
@@ -93,7 +95,7 @@ Partial Class Game_Box
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(281, 35)
+        Me.Label1.Location = New System.Drawing.Point(281, 57)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(18, 13)
         Me.Label1.TabIndex = 3
@@ -101,7 +103,7 @@ Partial Class Game_Box
         '
         'ButPass
         '
-        Me.ButPass.Location = New System.Drawing.Point(229, 191)
+        Me.ButPass.Location = New System.Drawing.Point(227, 221)
         Me.ButPass.Name = "ButPass"
         Me.ButPass.Size = New System.Drawing.Size(98, 25)
         Me.ButPass.TabIndex = 5
@@ -110,7 +112,7 @@ Partial Class Game_Box
         '
         'ButShoot2pt
         '
-        Me.ButShoot2pt.Location = New System.Drawing.Point(228, 249)
+        Me.ButShoot2pt.Location = New System.Drawing.Point(226, 283)
         Me.ButShoot2pt.Name = "ButShoot2pt"
         Me.ButShoot2pt.Size = New System.Drawing.Size(98, 25)
         Me.ButShoot2pt.TabIndex = 6
@@ -119,25 +121,16 @@ Partial Class Game_Box
         '
         'ButDribble
         '
-        Me.ButDribble.Location = New System.Drawing.Point(228, 311)
+        Me.ButDribble.Location = New System.Drawing.Point(227, 314)
         Me.ButDribble.Name = "ButDribble"
         Me.ButDribble.Size = New System.Drawing.Size(98, 25)
         Me.ButDribble.TabIndex = 7
         Me.ButDribble.Text = "Dribble"
         Me.ButDribble.UseVisualStyleBackColor = True
         '
-        'ButHold
-        '
-        Me.ButHold.Location = New System.Drawing.Point(228, 280)
-        Me.ButHold.Name = "ButHold"
-        Me.ButHold.Size = New System.Drawing.Size(98, 25)
-        Me.ButHold.TabIndex = 8
-        Me.ButHold.Text = "Hold Ball"
-        Me.ButHold.UseVisualStyleBackColor = True
-        '
         'ButRebound
         '
-        Me.ButRebound.Location = New System.Drawing.Point(228, 342)
+        Me.ButRebound.Location = New System.Drawing.Point(227, 345)
         Me.ButRebound.Name = "ButRebound"
         Me.ButRebound.Size = New System.Drawing.Size(98, 23)
         Me.ButRebound.TabIndex = 9
@@ -146,7 +139,7 @@ Partial Class Game_Box
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(454, 236)
+        Me.ProgressBar1.Location = New System.Drawing.Point(464, 224)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(100, 23)
         Me.ProgressBar1.TabIndex = 10
@@ -154,7 +147,7 @@ Partial Class Game_Box
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(374, 236)
+        Me.Label2.Location = New System.Drawing.Point(384, 224)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(74, 13)
         Me.Label2.TabIndex = 11
@@ -163,7 +156,7 @@ Partial Class Game_Box
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(374, 265)
+        Me.Label3.Location = New System.Drawing.Point(384, 253)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(82, 13)
         Me.Label3.TabIndex = 12
@@ -172,7 +165,7 @@ Partial Class Game_Box
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(374, 302)
+        Me.Label4.Location = New System.Drawing.Point(384, 290)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 13)
         Me.Label4.TabIndex = 13
@@ -181,7 +174,7 @@ Partial Class Game_Box
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(374, 333)
+        Me.Label5.Location = New System.Drawing.Point(384, 321)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(57, 13)
         Me.Label5.TabIndex = 14
@@ -190,7 +183,7 @@ Partial Class Game_Box
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(374, 362)
+        Me.Label6.Location = New System.Drawing.Point(384, 350)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(56, 13)
         Me.Label6.TabIndex = 15
@@ -199,7 +192,7 @@ Partial Class Game_Box
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(374, 392)
+        Me.Label7.Location = New System.Drawing.Point(384, 380)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(65, 13)
         Me.Label7.TabIndex = 16
@@ -208,7 +201,7 @@ Partial Class Game_Box
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(374, 420)
+        Me.Label8.Location = New System.Drawing.Point(384, 408)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(45, 13)
         Me.Label8.TabIndex = 17
@@ -216,43 +209,42 @@ Partial Class Game_Box
         '
         'ProgressBar2
         '
-        Me.ProgressBar2.Location = New System.Drawing.Point(454, 265)
+        Me.ProgressBar2.Location = New System.Drawing.Point(464, 253)
         Me.ProgressBar2.Name = "ProgressBar2"
         Me.ProgressBar2.Size = New System.Drawing.Size(100, 23)
         Me.ProgressBar2.TabIndex = 18
         '
         'ProgressBar3
         '
-        Me.ProgressBar3.Location = New System.Drawing.Point(454, 333)
+        Me.ProgressBar3.Location = New System.Drawing.Point(464, 321)
         Me.ProgressBar3.Name = "ProgressBar3"
         Me.ProgressBar3.Size = New System.Drawing.Size(100, 23)
         Me.ProgressBar3.TabIndex = 19
-        Me.ProgressBar3.Value = 1
         '
         'ProgressBar4
         '
-        Me.ProgressBar4.Location = New System.Drawing.Point(454, 302)
+        Me.ProgressBar4.Location = New System.Drawing.Point(464, 290)
         Me.ProgressBar4.Name = "ProgressBar4"
         Me.ProgressBar4.Size = New System.Drawing.Size(100, 23)
         Me.ProgressBar4.TabIndex = 20
         '
         'ProgressBar5
         '
-        Me.ProgressBar5.Location = New System.Drawing.Point(454, 362)
+        Me.ProgressBar5.Location = New System.Drawing.Point(464, 350)
         Me.ProgressBar5.Name = "ProgressBar5"
         Me.ProgressBar5.Size = New System.Drawing.Size(100, 23)
         Me.ProgressBar5.TabIndex = 21
         '
         'ProgressBar6
         '
-        Me.ProgressBar6.Location = New System.Drawing.Point(454, 391)
+        Me.ProgressBar6.Location = New System.Drawing.Point(464, 379)
         Me.ProgressBar6.Name = "ProgressBar6"
         Me.ProgressBar6.Size = New System.Drawing.Size(100, 23)
         Me.ProgressBar6.TabIndex = 22
         '
         'ProgressBar7
         '
-        Me.ProgressBar7.Location = New System.Drawing.Point(454, 420)
+        Me.ProgressBar7.Location = New System.Drawing.Point(464, 408)
         Me.ProgressBar7.Name = "ProgressBar7"
         Me.ProgressBar7.Size = New System.Drawing.Size(100, 23)
         Me.ProgressBar7.TabIndex = 23
@@ -260,7 +252,7 @@ Partial Class Game_Box
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(12, 401)
+        Me.Label9.Location = New System.Drawing.Point(12, 452)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(40, 13)
         Me.Label9.TabIndex = 24
@@ -269,7 +261,7 @@ Partial Class Game_Box
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(12, 440)
+        Me.Label10.Location = New System.Drawing.Point(12, 491)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(32, 13)
         Me.Label10.TabIndex = 25
@@ -277,21 +269,22 @@ Partial Class Game_Box
         '
         'ProgressBar8
         '
-        Me.ProgressBar8.Location = New System.Drawing.Point(74, 401)
+        Me.ProgressBar8.Location = New System.Drawing.Point(74, 452)
         Me.ProgressBar8.Name = "ProgressBar8"
         Me.ProgressBar8.Size = New System.Drawing.Size(252, 32)
         Me.ProgressBar8.TabIndex = 26
+        Me.ProgressBar8.Value = 100
         '
         'ProgressBar9
         '
-        Me.ProgressBar9.Location = New System.Drawing.Point(74, 440)
+        Me.ProgressBar9.Location = New System.Drawing.Point(74, 491)
         Me.ProgressBar9.Name = "ProgressBar9"
         Me.ProgressBar9.Size = New System.Drawing.Size(252, 32)
         Me.ProgressBar9.TabIndex = 27
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(529, 67)
+        Me.Button6.Location = New System.Drawing.Point(529, 89)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 48)
         Me.Button6.TabIndex = 28
@@ -301,7 +294,7 @@ Partial Class Game_Box
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(12, 211)
+        Me.Label11.Location = New System.Drawing.Point(12, 233)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(36, 13)
         Me.Label11.TabIndex = 29
@@ -310,7 +303,7 @@ Partial Class Game_Box
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(12, 237)
+        Me.Label12.Location = New System.Drawing.Point(12, 259)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(39, 13)
         Me.Label12.TabIndex = 30
@@ -319,7 +312,7 @@ Partial Class Game_Box
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(12, 265)
+        Me.Label13.Location = New System.Drawing.Point(12, 287)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(36, 13)
         Me.Label13.TabIndex = 31
@@ -328,7 +321,7 @@ Partial Class Game_Box
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(12, 295)
+        Me.Label14.Location = New System.Drawing.Point(12, 317)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(39, 13)
         Me.Label14.TabIndex = 32
@@ -337,7 +330,7 @@ Partial Class Game_Box
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(12, 319)
+        Me.Label15.Location = New System.Drawing.Point(12, 341)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(56, 13)
         Me.Label15.TabIndex = 33
@@ -346,7 +339,7 @@ Partial Class Game_Box
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(12, 352)
+        Me.Label16.Location = New System.Drawing.Point(12, 374)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(32, 13)
         Me.Label16.TabIndex = 34
@@ -354,7 +347,7 @@ Partial Class Game_Box
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(54, 211)
+        Me.TextBox5.Location = New System.Drawing.Point(74, 233)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(31, 20)
         Me.TextBox5.TabIndex = 35
@@ -362,7 +355,7 @@ Partial Class Game_Box
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(54, 292)
+        Me.TextBox6.Location = New System.Drawing.Point(74, 314)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(31, 20)
         Me.TextBox6.TabIndex = 36
@@ -370,7 +363,7 @@ Partial Class Game_Box
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(54, 265)
+        Me.TextBox7.Location = New System.Drawing.Point(74, 287)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(31, 20)
         Me.TextBox7.TabIndex = 37
@@ -378,7 +371,7 @@ Partial Class Game_Box
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(54, 238)
+        Me.TextBox8.Location = New System.Drawing.Point(74, 260)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(31, 20)
         Me.TextBox8.TabIndex = 38
@@ -386,7 +379,7 @@ Partial Class Game_Box
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(74, 318)
+        Me.TextBox9.Location = New System.Drawing.Point(74, 340)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(31, 20)
         Me.TextBox9.TabIndex = 39
@@ -394,7 +387,7 @@ Partial Class Game_Box
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(54, 352)
+        Me.TextBox10.Location = New System.Drawing.Point(74, 371)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(31, 20)
         Me.TextBox10.TabIndex = 40
@@ -402,16 +395,18 @@ Partial Class Game_Box
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(15, 67)
+        Me.TextBox11.Location = New System.Drawing.Point(15, 89)
         Me.TextBox11.Multiline = True
         Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBox11.Size = New System.Drawing.Size(459, 116)
         Me.TextBox11.TabIndex = 41
+        Me.TextBox11.Text = "Tip Off..."
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(526, 136)
+        Me.Label17.Location = New System.Drawing.Point(526, 158)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(38, 13)
         Me.Label17.TabIndex = 42
@@ -419,7 +414,7 @@ Partial Class Game_Box
         '
         'TextBox12
         '
-        Me.TextBox12.Location = New System.Drawing.Point(529, 152)
+        Me.TextBox12.Location = New System.Drawing.Point(529, 174)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(45, 20)
         Me.TextBox12.TabIndex = 43
@@ -427,7 +422,7 @@ Partial Class Game_Box
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(529, 1)
+        Me.Button7.Location = New System.Drawing.Point(529, 23)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 25)
         Me.Button7.TabIndex = 44
@@ -436,7 +431,7 @@ Partial Class Game_Box
         '
         'ButShoot3pt
         '
-        Me.ButShoot3pt.Location = New System.Drawing.Point(229, 222)
+        Me.ButShoot3pt.Location = New System.Drawing.Point(227, 252)
         Me.ButShoot3pt.Name = "ButShoot3pt"
         Me.ButShoot3pt.Size = New System.Drawing.Size(98, 25)
         Me.ButShoot3pt.TabIndex = 45
@@ -446,7 +441,7 @@ Partial Class Game_Box
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(159, 32)
+        Me.Label18.Location = New System.Drawing.Point(159, 54)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(45, 13)
         Me.Label18.TabIndex = 46
@@ -455,7 +450,7 @@ Partial Class Game_Box
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(385, 32)
+        Me.Label19.Location = New System.Drawing.Point(385, 54)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(45, 13)
         Me.Label19.TabIndex = 47
@@ -463,7 +458,7 @@ Partial Class Game_Box
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(37, 32)
+        Me.TextBox1.Location = New System.Drawing.Point(37, 54)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(31, 20)
         Me.TextBox1.TabIndex = 48
@@ -472,17 +467,47 @@ Partial Class Game_Box
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(34, 9)
+        Me.Label20.Location = New System.Drawing.Point(34, 31)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(44, 13)
         Me.Label20.TabIndex = 49
         Me.Label20.Text = "Minutes"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(228, 374)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(98, 23)
+        Me.Button1.TabIndex = 50
+        Me.Button1.Text = "Steal"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(228, 403)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(98, 23)
+        Me.Button2.TabIndex = 51
+        Me.Button2.Text = "Block"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'ButPlayPause
+        '
+        Me.ButPlayPause.Location = New System.Drawing.Point(240, 12)
+        Me.ButPlayPause.Name = "ButPlayPause"
+        Me.ButPlayPause.Size = New System.Drawing.Size(75, 23)
+        Me.ButPlayPause.TabIndex = 52
+        Me.ButPlayPause.Text = "Play"
+        Me.ButPlayPause.UseVisualStyleBackColor = True
+        '
         'Game_Box
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(613, 481)
+        Me.ClientSize = New System.Drawing.Size(613, 526)
+        Me.Controls.Add(Me.ButPlayPause)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label19)
@@ -524,7 +549,6 @@ Partial Class Game_Box
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.ButRebound)
-        Me.Controls.Add(Me.ButHold)
         Me.Controls.Add(Me.ButDribble)
         Me.Controls.Add(Me.ButShoot2pt)
         Me.Controls.Add(Me.ButPass)
@@ -544,7 +568,6 @@ Partial Class Game_Box
     Friend WithEvents ButPass As System.Windows.Forms.Button
     Friend WithEvents ButShoot2pt As System.Windows.Forms.Button
     Friend WithEvents ButDribble As System.Windows.Forms.Button
-    Friend WithEvents ButHold As System.Windows.Forms.Button
     Friend WithEvents ButRebound As System.Windows.Forms.Button
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Label2 As System.Windows.Forms.Label
@@ -586,4 +609,7 @@ Partial Class Game_Box
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents ButPlayPause As System.Windows.Forms.Button
 End Class

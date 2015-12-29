@@ -821,7 +821,7 @@ Partial Class Skills
         Me.TxtCredits.Name = "TxtCredits"
         Me.TxtCredits.Size = New System.Drawing.Size(36, 20)
         Me.TxtCredits.TabIndex = 92
-        Me.TxtCredits.Text = "20"
+        Me.TxtCredits.Text = "200"
         '
         'butSave
         '

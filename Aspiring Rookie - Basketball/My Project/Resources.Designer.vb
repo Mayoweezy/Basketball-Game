@@ -59,5 +59,90 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Sutton Grammar School is pushing forward…
+        '''It is played to player’s name
+        '''He is Mid-Range to the basket
+        '''One Defender closes him down
+        '''There is 1 team mate open at the three point line.
+        '''</summary>
+        Friend ReadOnly Property AttScene1() As String
+            Get
+                Return ResourceManager.GetString("AttScene1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 0.
+        '''</summary>
+        Friend ReadOnly Property String1() As String
+            Get
+                Return ResourceManager.GetString("String1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 1.
+        '''</summary>
+        Friend ReadOnly Property String2() As String
+            Get
+                Return ResourceManager.GetString("String2", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 2.
+        '''</summary>
+        Friend ReadOnly Property String3() As String
+            Get
+                Return ResourceManager.GetString("String3", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 3.
+        '''</summary>
+        Friend ReadOnly Property String4() As String
+            Get
+                Return ResourceManager.GetString("String4", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 4.
+        '''</summary>
+        Friend ReadOnly Property String5() As String
+            Get
+                Return ResourceManager.GetString("String5", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 5.
+        '''</summary>
+        Friend ReadOnly Property String6() As String
+            Get
+                Return ResourceManager.GetString("String6", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 6.
+        '''</summary>
+        Friend ReadOnly Property String7() As String
+            Get
+                Return ResourceManager.GetString("String7", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 7.
+        '''</summary>
+        Friend ReadOnly Property String8() As String
+            Get
+                Return ResourceManager.GetString("String8", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

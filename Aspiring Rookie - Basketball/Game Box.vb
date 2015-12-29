@@ -330,7 +330,7 @@ Public Class Game_Box
                         Next
 
                         If ProgressBar1.Value = 100 Then
-    For i As Integer = 0 To randoms.Length - 1
+                            For i As Integer = 0 To randoms.Length - 1
                                 randoms(i) = GetRandom(51, 100)
                                 If i <= 50 Then
                                     TextBox11.Text = TextBox11.Text + "KOBE!!! Nets a beautiful 2 pointer"
@@ -339,8 +339,8 @@ Public Class Game_Box
                                 End If
                             Next
                         End If
+                    End If
                 End If
-            End If
         End If
         End If
     End Sub
@@ -365,6 +365,17 @@ Public Class Game_Box
         If ds.Tables(0).Rows.Count = 1 Then
             'Label18.Text = ds.Tables(0).Rows(0)
         End If
+
+        Dim txtDef As String = "defending.txt"
+        Dim txtDefRebound As String = "Defensive Rebound.txt"
+        Dim txtDunkAO As String = "DunkAlleyOop.txt"
+        Dim txtAttack As String = "Offence.txt"
+        Dim txtOffReb As String = "OffRebound.txt"
+        Dim txtthreepoint As String = "threepointtxt.txt"
+        Dim threepoint As String = "3ptOrDribble.txt"
+
+        txtAttack = 0
+        txtDef = 1
 
     End Sub
 
@@ -691,6 +702,7 @@ Public Class Game_Box
         Dim x As Integer = TextBox3.Text
         Dim c As Integer = 3
         Dim v As Integer = 2
+        Dim totalpoints As Integer = TextBox5.Text
 
 
 
@@ -702,6 +714,7 @@ Public Class Game_Box
                     TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                     z = x + c
                     TextBox3.Text = z
+                    totalpoints += c
                 Else
                     TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                     For k As Integer = 0 To randoms.Length - 1
@@ -728,6 +741,7 @@ Public Class Game_Box
                     TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                     z = x + c
                     TextBox3.Text = z
+                    totalpoints += c
                 Else
                     TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                     For k As Integer = 0 To randoms.Length - 1
@@ -753,6 +767,7 @@ Public Class Game_Box
                     TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                     z = x + c
                     TextBox3.Text = z
+                    totalpoints += c
                 Else
                     TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                     For k As Integer = 0 To randoms.Length - 1
@@ -784,6 +799,7 @@ Public Class Game_Box
                     TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                     z = x + c
                     TextBox3.Text = z
+                    totalpoints += c
                 Else
                     TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                     For k As Integer = 0 To randoms.Length - 1
@@ -807,6 +823,7 @@ Public Class Game_Box
                     TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                     z = x + c
                     TextBox3.Text = z
+                    totalpoints += c
                 Else
                     TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                     For k As Integer = 0 To randoms.Length - 1
@@ -830,6 +847,7 @@ Public Class Game_Box
                     TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                     z = x + c
                     TextBox3.Text = z
+                    totalpoints += c
                 Else
                     TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                     For k As Integer = 0 To randoms.Length - 1
@@ -853,6 +871,7 @@ Public Class Game_Box
                     TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                     z = x + c
                     TextBox3.Text = z
+                    totalpoints += c
                 Else
                     TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                     For k As Integer = 0 To randoms.Length - 1
@@ -876,6 +895,7 @@ Public Class Game_Box
                         TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                         z = x + c
                         TextBox3.Text = z
+                        totalpoints += c
                     Else
                         TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                         For k As Integer = 0 To randoms.Length - 1
@@ -898,6 +918,7 @@ Public Class Game_Box
                             TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                             z = x + c
                             TextBox3.Text = z
+                            totalpoints += c
                         Else
                             TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                             For k As Integer = 0 To randoms.Length - 1
@@ -920,6 +941,7 @@ Public Class Game_Box
                                 TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                                 z = x + c
                                 TextBox3.Text = z
+                                totalpoints += c
                             Else
                                 TextBox11.Text = TextBox11.Text + "Shoots a three And Misses"
                                 For k As Integer = 0 To randoms.Length - 1
@@ -942,6 +964,7 @@ Public Class Game_Box
                                     TextBox11.Text = TextBox11.Text + "Splash Like Stephen Curry! Nothing but Net!"
                                     z = x + c
                                     TextBox3.Text = z
+                                    totalpoints += c
                                 End If
 
                             Next
@@ -957,8 +980,7 @@ Public Class Game_Box
         Dim z As Double
         Dim c As Integer = TextBox2.Text
         Dim x As Integer = TextBox3.Text
-        Dim v As Integer = 2
-
+        Dim v As Integer = 2 
 
 
         If ProgressBar3.Value <= 10 Then
@@ -1138,5 +1160,639 @@ Public Class Game_Box
                 End If
             Next
         End If
+    End Sub
+
+    Private Sub ProgressBar8_Click(sender As System.Object, e As System.EventArgs) Handles ProgressBar8.Click
+    End Sub
+
+    Private Sub ButRebound_Click(sender As System.Object, e As System.EventArgs) Handles ButRebound.Click
+        Dim randoms(100) As Integer
+        Dim z As Double
+        Dim x As Integer = TextBox2.Text
+        Dim v As Integer = 2
+
+
+
+        If ProgressBar6.Value <= 10 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(10, 80)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value <= 20 > 10 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(10, 90)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value <= 30 > 20 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(10, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value <= 40 > 30 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(15, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value <= 50 > 40 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(20, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value <= 60 > 50 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(25, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value <= 70 > 60 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(30, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value <= 80 > 70 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(35, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value <= 90 > 80 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(40, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value <= 99 > 90 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(45, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                Else
+                    TextBox11.Text = TextBox11.Text + "The Opposing Team's centre gets the putback Dunk"
+                    x += v
+                End If
+            Next
+        End If
+        If ProgressBar6.Value = 100 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(50, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name rises to claim the rebound"
+                End If
+            Next
+        End If
+    End Sub
+
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        Dim randoms(100) As Integer
+        Dim z As Double
+        Dim c As Integer = TextBox2.Text
+        Dim x As Integer = TextBox3.Text
+        Dim v As Integer = 2
+
+        If ProgressBar7.Value <= 10 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(10, 80)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value <= 20 > 10 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(10, 90)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value <= 30 > 20 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(10, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value <= 40 > 30 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(15, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value <= 50 > 40 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(15, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value <= 60 > 50 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(20, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value <= 70 > 60 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(25, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value <= 80 > 70 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(30, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value <= 90 > 80 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(35, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value <= 99 > 90 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(45, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "Player Name steals the ball with skill" + vbNewLine + "Goes Coast to Coast to get the Lay Up"
+                    x += v
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If ProgressBar7.Value = 100 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(60, 100)
+                If i <= 50 Then
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy reached in and fouled the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+    End Sub
+
+    Private Sub Button2_Click_1(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+        Dim randoms(100) As Integer
+        Dim z As Double
+        Dim c As Integer = TextBox2.Text
+        Dim x As Integer = TextBox3.Text
+        Dim v As Integer = 2
+        Dim TotBlocks As Integer = TextBox6.Text
+        Dim a As Integer = 1
+
+
+        If Skills.ProgressBar21.Value <= 10 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(10, 80)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value <= 20 > 10 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(10, 90)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value <= 30 > 20 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(10, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value <= 40 > 30 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(15, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value <= 50 > 40 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(20, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value <= 60 > 50 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(25, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value <= 70 > 60 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(30, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value <= 80 > 70 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(35, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value <= 90 > 80 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(40, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value <= 99 > 90 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(45, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                Else
+                    For foul As Integer = 0 To randoms.Length - 1
+                        randoms(foul) = GetRandom(55, 100)
+                        If foul <= 70 Then
+                            TextBox11.Text = TextBox11.Text + "Player Name carelessy fouls the opponent" + vbNewLine + "The Opposing Player Gets both free throws"
+                            c += v
+                        Else
+                            TextBox11.Text = TextBox11.Text + "The opposing player gets by Player Name and gets an easy basket"
+                            c += v
+                        End If
+                    Next
+                End If
+            Next
+        End If
+        If Skills.ProgressBar21.Value = 100 Then
+
+            For i As Integer = 0 To randoms.Length - 1
+                randoms(i) = GetRandom(50, 100)
+                If i <= 50 Then
+                    TextBox11.Text = TextBox11.Text + "What A Block by Player Name! Crowd Goes Wild"
+                    x += v
+                    TotBlocks += a
+                End If
+            Next
+
+        End If
+    End Sub
+
+    Private Sub TextBox8_TextChanged(sender As System.Object, e As System.EventArgs) Handles TextBox8.TextChanged
+
+    End Sub
+
+    Private Sub ButPlayPause_Click(sender As System.Object, e As System.EventArgs) Handles ButPlayPause.Click
+        'Dim gametext() As String = {string1, string2, string3, string4, string5, string6, string7}
+        Dim randoms(10) As Integer
+        'Dim i As Integer = 0 To randoms.Length - 1
     End Sub
 End Class

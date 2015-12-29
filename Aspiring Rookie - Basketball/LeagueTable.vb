@@ -1,6 +1,4 @@
 ﻿Imports System.Data.OleDb
-Imports Aspiring_Rookie___Basketball.Domain
-
 Public Class LeagueTable
     
     Private Sub LeagueTable_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
