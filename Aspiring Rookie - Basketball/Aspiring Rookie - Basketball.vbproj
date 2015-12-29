@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{427A924B-EAD0-4A61-B9F0-E546DB281F1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Aspiring_Rookie___Basketball.My.MyApplication</StartupObject>
+    <RootNamespace>Aspiring_Rookie___Basketball</RootNamespace>
+    <AssemblyName>Aspiring Rookie - Basketball</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Aspiring Rookie - Basketball.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Aspiring Rookie - Basketball.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AwardsPage.Designer.vb">
+      <DependentUpon>AwardsPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AwardsPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBank.Designer.vb">
+      <DependentUpon>DataBank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataBank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\DataManager.vb" />
+    <Compile Include="Domain\Fixture.vb" />
+    <Compile Include="Domain\FixtureGenerator.vb" />
+    <Compile Include="Domain\GameController.vb" />
+    <Compile Include="Domain\GameObjects.vb" />
+    <Compile Include="Domain\Player.vb" />
+    <Compile Include="Domain\Positions.vb" />
+    <Compile Include="Domain\ShopItem.vb" />
+    <Compile Include="Domain\Skills.vb" />
+    <Compile Include="Domain\Stats.vb" />
+    <Compile Include="Domain\Team.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game Box.Designer.vb">
+      <DependentUpon>Game Box.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Game Box.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsOwned.Designer.vb">
+      <DependentUpon>ItemsOwned.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsOwned.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeagueDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeagueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LeagueTable.Designer.vb">
+      <DependentUpon>LeagueTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LeagueTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SaveGameClass.vb" />
+    <Compile Include="ShopModule.vb" />
+    <Compile Include="Shop.Designer.vb">
+      <DependentUpon>Shop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skills.Designer.vb">
+      <DependentUpon>Skills.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Skills.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stats.Designer.vb">
+      <DependentUpon>Stats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AwardsPage.resx">
+      <DependentUpon>AwardsPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBank.resx">
+      <DependentUpon>DataBank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Box.resx">
+      <DependentUpon>Game Box.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsOwned.resx">
+      <DependentUpon>ItemsOwned.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeagueTable.resx">
+      <DependentUpon>LeagueTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop.resx">
+      <DependentUpon>Shop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skills.resx">
+      <DependentUpon>Skills.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stats.resx">
+      <DependentUpon>Stats.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Data\GameConfig\NewTeams.json" />
+    <None Include="LeagueDataSet.xsc">
+      <DependentUpon>LeagueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LeagueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeagueDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LeagueDataSet.xss">
+      <DependentUpon>LeagueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BasketballRookie.xml" />
+    <Content Include="DataBankSkills.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataBankSkillsSet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Data\CurrentGame\Teams.json" />
+    <None Include="Data\GameConfig\ShopItems.json" />
+    <Content Include="League.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

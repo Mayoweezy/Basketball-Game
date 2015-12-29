@@ -1,0 +1,42 @@
+﻿[
+	{
+		"Name": "Smartphone",
+		"Price": 400,
+		"LifeStyleValue": 15
+	},
+	{
+		"Name": "Macbook",
+		"Price": 1500,
+		"LifeStyleValue": 20
+	},
+	{
+		"Name": "Laptop",
+		"Price": 600,
+		"LifeStyleValue": 25
+	},	
+	{
+		"Name": "PS4",
+		"Price": 100,
+		"LifeStyleValue": 15
+	},
+	{
+		"Name": "Headphones",
+		"Price": 100,
+		"LifeStyleValue": 5
+	},
+	{
+		"Name": "Jewelry",
+		"Price": 100,
+		"LifeStyleValue": 5
+	},
+	{
+		"Name": "Trainers",
+		"Price": 10,
+		"LifeStyleValue": 5
+	},
+	{
+		"Name": "Suit",
+		"Price": 1000,
+		"LifeStyleValue": 10
+	}
+]
