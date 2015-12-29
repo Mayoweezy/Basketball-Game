@@ -81,18 +81,6 @@
     <Compile Include="Awards.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AwardsPage.Designer.vb">
-      <DependentUpon>AwardsPage.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AwardsPage.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DataBank.Designer.vb">
-      <DependentUpon>DataBank.vb</DependentUpon>
-    </Compile>
-    <Compile Include="DataBank.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Data\DataManager.vb" />
     <Compile Include="Domain\Fixture.vb" />
     <Compile Include="Domain\FixtureGenerator.vb" />
@@ -181,12 +169,6 @@
     <EmbeddedResource Include="Awards.resx">
       <DependentUpon>Awards.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AwardsPage.resx">
-      <DependentUpon>AwardsPage.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DataBank.resx">
-      <DependentUpon>DataBank.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -245,13 +227,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BasketballRookie.xml" />
-    <Content Include="DataBankSkills.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="DataBankSkillsSet.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Data\CurrentGame\Teams.json" />
     <None Include="Data\GameConfig\ShopItems.json" />
     <Content Include="League.accdb">

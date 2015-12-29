@@ -6,7 +6,60 @@ AspiringRookie-Basketball
 </name>
 </assembly>
 <members>
-<member name="T:Aspiring_Rookie___Basketball.LeagueDataSet.LeagueTableTrialDataTable">
+<member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.AttScene1">
+	<summary>
+  Looks up a localized string similar to Sutton Grammar School is pushing forward…
+It is played to player’s name
+He is Mid-Range to the basket
+One Defender closes him down
+There is 1 team mate open at the three point line.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.String1">
+	<summary>
+  Looks up a localized string similar to 0.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.String2">
+	<summary>
+  Looks up a localized string similar to 1.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.String3">
+	<summary>
+  Looks up a localized string similar to 2.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.String4">
+	<summary>
+  Looks up a localized string similar to 3.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.String5">
+	<summary>
+  Looks up a localized string similar to 4.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.String6">
+	<summary>
+  Looks up a localized string similar to 5.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.String7">
+	<summary>
+  Looks up a localized string similar to 6.
+</summary>
+</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.String8">
+	<summary>
+  Looks up a localized string similar to 7.
+</summary>
+</member><member name="T:Aspiring_Rookie___Basketball.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Aspiring_Rookie___Basketball.LeagueDataSet.LeagueTableTrialDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -57,19 +110,6 @@ Used to sort self-referenced table's rows
 </member><member name="T:Aspiring_Rookie___Basketball.LeagueDataSetTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:Aspiring_Rookie___Basketball.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:Aspiring_Rookie___Basketball.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
 </member>
 </members>

@@ -8,18 +8,18 @@ Public Class Shop
         shopItems = GameController.GetAllShopItems()
         shopItems.ForEach(Function(item) {CheckedListBox1.Items.Add(item.Name)})
         TxtBankShop.Text = GameController.GameObjects.Player.BankBalance
+        ProgressBar1.Value = GameController.GameObjects.Player.QualityOfLife
     End Sub
     
     Private Sub ProcessItem(item As String)
         Dim fullItem = shopItems.First(Function(shopItem) shopItem.Name = item)
 
         'Process price
-        Dim bankBalance As Decimal = TxtBankShop.Text
-        bankBalance -= fullItem.Price
-        TxtBankShop.Text = bankBalance
+        GameController.GameObjects.Player.BankBalance -= fullItem.Price
+        TxtBankShop.Text = GameController.GameObjects.Player.BankBalance
 
         'Process lifestyle progress bar
-        ProgressBar1.Value += fullItem.LifeStyleValue
+        GameController.GameObjects.Player.QualityOfLife += fullItem.LifeStyleValue
     End Sub
 
     Private Sub ButBuy_Click(sender As System.Object, e As System.EventArgs) Handles ButBuy.Click
@@ -30,29 +30,9 @@ Public Class Shop
         For Each checkedItem In CheckedListBox1.CheckedItems
             ProcessItem(checkedItem)
         Next
-   
-        Dim document As XDocument
-        If File.Exists("DataBankSkills.xml") Then
-            document = XDocument.Load("DataBankSkills.xml")
-        Else
-            MessageBox.Show("No such file Exists'")
-        End If
 
-        Dim root = New XElement("Data")
-        Dim banknum = New XElement("BankNumber", TxtBankShop.Text)
-        Dim ShoppingList = New XElement("ShoppingList", CheckedListBox1.Text)
-        Dim lifebar = New XElement("Lifestyle", ProgressBar1.Value)
-        
-        root.Add(banknum, ShoppingList, lifebar)
-        document.Root.ReplaceWith(root)
-
-        If File.Exists("DataBankSkills.xml") Then
-            document = XDocument.Load("DataBankSkills.xml")
-            root.Add(banknum, ShoppingList, lifebar)
-            document.Root.ReplaceWith(root)
-            'document.Save("databankskills.xml")
-        End If
-
+        TxtBankShop.Text = GameController.GameObjects.Player.BankBalance
+        ProgressBar1.Value = GameController.GameObjects.Player.QualityOfLife
     End Sub
 
     Private Sub ButItems_Click(sender As System.Object, e As System.EventArgs) Handles ButItems.Click

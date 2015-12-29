@@ -86,3 +86,27 @@ H:\sutton grammar\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\
 H:\sutton grammar\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Skills.resources
 H:\sutton grammar\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Stats.resources
 H:\sutton grammar\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.vbproj.GenerateResource.Cache
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.exe.config
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.exe
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.xml
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.pdb
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\DataBankSkills.xml
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\DataBankSkillsSet.xml
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\League.accdb
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.exe
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.pdb
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.xml
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.vbprojResolveAssemblyReference.cache
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Awards.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.AwardsPage.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.DataBank.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Form1.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Game_Box.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.ItemsOwned.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.LeagueTable.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Resources.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Name.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Shop.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Skills.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Stats.resources
+D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.vbproj.GenerateResource.Cache

@@ -1,10 +1,11 @@
-﻿Imports System.Data.OleDb
+﻿Imports Aspiring_Rookie___Basketball.Domain
+
 Public Class LeagueTable
-    
+
     Private Sub LeagueTable_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         DataGridView1.DataSource = GameController.GetCurrentLeagueTable()
     End Sub
-    
+
     Private Sub LeagueTableTrialBindingNavigatorSaveItem_Click(sender As System.Object, e As System.EventArgs)
         Me.Validate()
         Me.LeagueTableTrialBindingSource.EndEdit()

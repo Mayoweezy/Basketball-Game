@@ -6,6 +6,9 @@
             Team = New Team()
             Skill = New Skills()
             ItemsOwned = New Dictionary(Of ShopItem, Integer)()
+            EnergyLevel = 100
+            BankBalance = 100
+            SkillsCredit = 100
         End Sub
 
         Public FirstName As String
@@ -21,6 +24,5 @@
         Public Skill As Skills
         Public Team As Team
         Public ItemsOwned As Dictionary(Of ShopItem, Integer)
-        Public Salary As Integer
     End Class
 End Namespace

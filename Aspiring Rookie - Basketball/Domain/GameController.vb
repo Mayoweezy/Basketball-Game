@@ -6,9 +6,16 @@ Namespace Domain
             GameObjects = New GameObjects()
             GameObjects.Teams = DataManager.GetNewTeamData()
             GameObjects.Fixtures = CreateFixtures()
+            GameObjects.Player = GenericPlayer()
+            GameObjects.Player.Team = GameObjects.Teams.First(Function(team) team.Name = "Sutton Grammar")
         End Sub
 
         Public GameObjects As GameObjects
+
+        Public Function GenericPlayer() As Player
+            Dim player = New Player With {.DateOfBirth = Today.AddYears(-18), .FirstName = "Generic", .LastName = "Player", .Positions = New List(Of Positions)({Positions.Pg})}
+            Return player
+        End Function
 
         Public Function GetAllShopItems() As List(Of ShopItem)
             Return DataManager.GetAllShopItems()
