@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports Aspiring_Rookie___Basketball.Domain
 
 Public Class Skills
 
@@ -6,27 +7,52 @@ Public Class Skills
 
     End Sub
 
-    Private Sub Skills_FormClosed(sender As Object, e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
-        'Dim p As New SaveGameClass
-
-    End Sub
-
-    Private Sub Skills_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
-        'Dim strFilename As String = ("BasketballRookie" & ".xml")
-        'Dim p2 As SaveGameClass = SaveGameClass.Load(strFilename)
-
-        'ProgressBar1.Value = p2.Prop1
-
-    End Sub
+    Private Const MinValue = 0
+    Private Const MaxValue = 10
 
     Private Sub Skills_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        'Dim strFilename As String = ("BasketballRookie" & ".xml")
-        'Dim p2 As SaveGameClass = SaveGameClass.Load(strFilename)
+        Dim playerSkill = GameController.GameObjects.Player.Skill
+        TxtCredits.Text = GameController.GameObjects.Player.SkillsCredit
+        ProgressBar1.Value = playerSkill.LayUp
+        ProgressBar2.Value = playerSkill.Dunk
+        ProgressBar3.Value = playerSkill.Mids
+        ProgressBar4.Value = playerSkill.ShotRelease
+        ProgressBar5.Value = playerSkill.InsideScoringAccuracy
+        ProgressBar6.Value = playerSkill.OutsideScoringAccuracy
+        ProgressBar7.Value = playerSkill.Passing
+        ProgressBar8.Value = playerSkill.Vision
+        ProgressBar9.Value = playerSkill.PassingAccuracy
+        ProgressBar11.Value = playerSkill.Pace
+        ProgressBar12.Value = playerSkill.Acceleration
+        ProgressBar13.Value = playerSkill.Strength
+        ProgressBar14.Value = playerSkill.JumpingReach
+        ProgressBar15.Value = playerSkill.JumpingAbility
+        ProgressBar16.Value = playerSkill.Handling
+        ProgressBar17.Value = playerSkill.Anticipation
+        ProgressBar18.Value = playerSkill.Reactions
+        ProgressBar19.Value = playerSkill.Defence
+        ProgressBar20.Value = playerSkill.WorkRate
+        ProgressBar21.Value = playerSkill.Blocking
 
-        'ProgressBar1.Value = p2.Prop1
+        ValidateTaxCredit()
 
+        'For Each pair In AllIncrementButtons()
+        '    ValidateUpperBoundSkillLevel(pair.Value.Value, pair.Key)
+        'Next
+
+        'For Each pair In AllDecrementButtons()
+        '    ValidateUpperBoundSkillLevel(pair.Item2.Value, pair.Item1)
+        'Next
 
     End Sub
+
+    Private Function AllIncrementButtons() As Dictionary(Of Button, ProgressBar)
+
+    End Function
+
+    Private Function AllDecrementButtons() As List(Of Tuple(Of Button, ProgressBar))
+
+    End Function
 
     Private Sub OutsideScoringToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
 
@@ -36,51 +62,53 @@ Public Class Skills
 
     End Sub
 
-    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles ButSubtractMids.Click
-        Dim x As Integer = ProgressBar3.Value
-        Dim a As Integer = ProgressBar3.Value
-        Dim b As Integer = Val(TxtCredits.Text)
-        Dim c As Double
-        x += -1
-        ProgressBar3.Value = x
-        a += 1
-        c = b + 1
+    Private Sub ValidateTaxCredit()
+        If GameController.GameObjects.Player.SkillsCredit = 0 Then
+            'Disable all positive buttons
 
-        TxtCredits.Text = c
-
-        If x = 0 Then
-            ButSubtractMids.Enabled = False
         End If
+    End Sub
+
+    Private Sub IncrementSkill(progressBar As ProgressBar, action As Action, incrementButton As Button, decrementButton As Button)
+        If progressBar.Value >= MaxValue Then
+            incrementButton.Enabled = False
+            Return
+        End If
+
+        progressBar.Value += 1
+        action()
+        GameController.GameObjects.Player.SkillsCredit -= 1
+        TxtCredits.Text = GameController.GameObjects.Player.SkillsCredit
+
+        decrementButton.Enabled = progressBar.Value > MinValue
+        ValidateTaxCredit()
+    End Sub
+
+    Private Sub DecrementSkill(progressBar As ProgressBar, action As Action, incrementButton As Button, decrementButton As Button)
+        If progressBar.Value <= MinValue Then
+            decrementButton.Enabled = False
+            Return
+        End If
+
+        progressBar.Value -= 1
+        action()
+        GameController.GameObjects.Player.SkillsCredit += 1
+        TxtCredits.Text = GameController.GameObjects.Player.SkillsCredit
+
+        incrementButton.Enabled = progressBar.Value < MaxValue
+        ValidateTaxCredit()
+    End Sub
+
+    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles ButSubtractMids.Click
+        Dim action = Sub() GameController.GameObjects.Player.Skill.Mids -= 1
+        DecrementSkill(ProgressBar3, action, ButAddMids, ButSubtractMids)
     End Sub
 
     Private Sub Button28_Click(sender As System.Object, e As System.EventArgs) Handles ButAddJumpReach.Click
-        Dim x As Integer = ProgressBar14.Value
-        Dim a As Integer = ProgressBar14.Value
-        Dim b As Integer = Val(TxtCredits.Text)
-        Dim c As Double
-
-        x += 1
-        ProgressBar14.Value = x
-        a += -1
-        c = b - 1
-
-        TxtCredits.Text = c
-
-        If c = 0 Then
-            ButAddLayUp.Enabled = False
-        End If
-        If x = 100 Then
-            ButAddLayUp.Enabled = False
-        End If
+        Dim action = Sub() GameController.GameObjects.Player.Skill.JumpingReach += 1
+        IncrementSkill(ProgressBar14, action, ButAddLayUp, ButSubtractLayUp)
     End Sub
-
-    Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
-        'ProgressBar1.Increment(1)
-        'If ProgressBar1.Value = ProgressBar1.Maximum Then
-
-        'End If
-    End Sub
-
+    
     Private Sub ButAddLayUp_Click(sender As System.Object, e As System.EventArgs) Handles ButAddLayUp.Click
         Dim x As Integer = ProgressBar1.Value
         Dim a As Integer = ProgressBar1.Value
@@ -126,24 +154,8 @@ Public Class Skills
     End Sub
 
     Private Sub ButAddMids_Click(sender As System.Object, e As System.EventArgs) Handles ButAddMids.Click
-        Dim x As Integer = ProgressBar3.Value
-        Dim a As Integer = ProgressBar3.Value
-        Dim b As Integer = Val(TxtCredits.Text)
-        Dim c As Double
-
-        x += 1
-        ProgressBar3.Value = x
-        a += -1
-        c = b - 1
-
-        TxtCredits.Text = c
-
-        If c = 0 Then
-            ButAddMids.Enabled = False
-        End If
-        If x = 100 Then
-            ButAddMids.Enabled = False
-        End If
+        Dim action = Sub() GameController.GameObjects.Player.Skill.Mids += 1
+        IncrementSkill(ProgressBar3, action, ButAddMids, ButSubtractMids)
     End Sub
 
     Private Sub ButAddShotRelease_Click(sender As System.Object, e As System.EventArgs) Handles ButAddShotRelease.Click
@@ -792,7 +804,7 @@ Public Class Skills
         End If
     End Sub
 
-    Private Sub butSave_Click(sender As System.Object, e As System.EventArgs) Handles butSave.Click
+    Private Sub butSave_Click(sender As System.Object, e As System.EventArgs)
 
         'For a As Integer = 1 To 21
         '    CType(Me.Controls("ProgressBar" & a), ProgressBar).Value
@@ -807,36 +819,32 @@ Public Class Skills
             MessageBox.Show("No such file Exists'")
         End If
 
-        Dim root = New XElement("Data")
-        Dim progressbarval1 = New XElement("ProgressBar", ProgressBar1.Value)
-        Dim progressbarval2 = New XElement("ProgressBar", ProgressBar2.Value)
-        Dim progressbarval3 = New XElement("ProgressBar", ProgressBar3.Value)
-        Dim progressbarval4 = New XElement("ProgressBar", ProgressBar4.Value)
-        Dim progressbarval5 = New XElement("ProgressBar", ProgressBar5.Value)
-        Dim progressbarval6 = New XElement("ProgressBar", ProgressBar6.Value)
-        Dim progressbarval7 = New XElement("ProgressBar", ProgressBar7.Value)
-        Dim progressbarval8 = New XElement("ProgressBar", ProgressBar8.Value)
-        Dim progressbarval9 = New XElement("ProgressBar", ProgressBar9.Value)
-        Dim progressbarval10 = New XElement("ProgressBar", ProgressBar11.Value)
-        Dim progressbarval11 = New XElement("ProgressBar", ProgressBar12.Value)
-        Dim progressbarval12 = New XElement("ProgressBar", ProgressBar13.Value)
-        Dim progressbarval13 = New XElement("ProgressBar", ProgressBar14.Value)
-        Dim progressbarval14 = New XElement("ProgressBar", ProgressBar15.Value)
-        Dim progressbarval15 = New XElement("ProgressBar", ProgressBar16.Value)
-        Dim progressbarval16 = New XElement("ProgressBar", ProgressBar17.Value)
-        Dim progressbarval17 = New XElement("ProgressBar", ProgressBar18.Value)
-        Dim progressbarval18 = New XElement("ProgressBar", ProgressBar19.Value)
-        Dim progressbarval19 = New XElement("ProgressBar", ProgressBar20.Value)
-        Dim progressbarval20 = New XElement("ProgressBar", ProgressBar21.Value)
-
-        'Dim ShoppingList = New XElement("ShoppingList", CheckedListBox1.Text)
-        'Dim lifebar = New XElement("Lifestyle", ProgressBar1.Value)
+        'Dim root = New XElement("Data")
+        'Dim progressbarval1 = New XElement("ProgressBar", ProgressBar1.Value)
+        'Dim progressbarval2 = New XElement("ProgressBar", ProgressBar2.Value)
+        'Dim progressbarval3 = New XElement("ProgressBar", ProgressBar3.Value)
+        'Dim progressbarval4 = New XElement("ProgressBar", ProgressBar4.Value)
+        'Dim progressbarval5 = New XElement("ProgressBar", ProgressBar5.Value)
+        'Dim progressbarval6 = New XElement("ProgressBar", ProgressBar6.Value)
+        'Dim progressbarval7 = New XElement("ProgressBar", ProgressBar7.Value)
+        'Dim progressbarval8 = New XElement("ProgressBar", ProgressBar8.Value)
+        'Dim progressbarval9 = New XElement("ProgressBar", ProgressBar9.Value)
+        'Dim progressbarval10 = New XElement("ProgressBar", ProgressBar11.Value)
+        'Dim progressbarval11 = New XElement("ProgressBar", ProgressBar12.Value)
+        'Dim progressbarval12 = New XElement("ProgressBar", ProgressBar13.Value)
+        'Dim progressbarval13 = New XElement("ProgressBar", ProgressBar14.Value)
+        'Dim progressbarval14 = New XElement("ProgressBar", ProgressBar15.Value)
+        'Dim progressbarval15 = New XElement("ProgressBar", ProgressBar16.Value)
+        'Dim progressbarval16 = New XElement("ProgressBar", ProgressBar17.Value)
+        'Dim progressbarval17 = New XElement("ProgressBar", ProgressBar18.Value)
+        'Dim progressbarval18 = New XElement("ProgressBar", ProgressBar19.Value)
+        'Dim progressbarval19 = New XElement("ProgressBar", ProgressBar20.Value)
+        'Dim progressbarval20 = New XElement("ProgressBar", ProgressBar21.Value)
 
 
+    End Sub
 
-        root.Add(progressbarval1, progressbarval2, progressbarval3, progressbarval4, progressbarval5, progressbarval6, progressbarval7, progressbarval8, progressbarval9, progressbarval10, progressbarval11, progressbarval12, progressbarval13, progressbarval14, progressbarval15, progressbarval16, progressbarval17, progressbarval18, progressbarval19, progressbarval20)
-
-        document.Root.ReplaceWith(root)
+    Private Sub ProgressBar9_Click(sender As Object, e As EventArgs) Handles ProgressBar9.Click
 
     End Sub
 End Class

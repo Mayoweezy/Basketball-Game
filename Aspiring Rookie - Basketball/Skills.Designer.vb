@@ -107,8 +107,7 @@ Partial Class Skills
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TxtCredits = New System.Windows.Forms.TextBox()
-        Me.butSave = New System.Windows.Forms.Button()
-        Me.SuspendLayout
+        Me.SuspendLayout()
         '
         'ProgressBar1
         '
@@ -116,7 +115,7 @@ Partial Class Skills
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(132, 24)
         Me.ProgressBar1.TabIndex = 0
-        Me.ProgressBar1.Tag = "Lay Up"
+        Me.ProgressBar1.Tag = "LayUp"
         '
         'ProgressBar2
         '
@@ -148,6 +147,7 @@ Partial Class Skills
         Me.ProgressBar5.Name = "ProgressBar5"
         Me.ProgressBar5.Size = New System.Drawing.Size(132, 24)
         Me.ProgressBar5.TabIndex = 4
+        Me.ProgressBar5.Tag = "InsideScoringAccuracy"
         '
         'ProgressBar6
         '
@@ -155,6 +155,7 @@ Partial Class Skills
         Me.ProgressBar6.Name = "ProgressBar6"
         Me.ProgressBar6.Size = New System.Drawing.Size(132, 24)
         Me.ProgressBar6.TabIndex = 5
+        Me.ProgressBar6.Tag = "threepointaccuracy"
         '
         'ProgressBar7
         '
@@ -162,6 +163,7 @@ Partial Class Skills
         Me.ProgressBar7.Name = "ProgressBar7"
         Me.ProgressBar7.Size = New System.Drawing.Size(132, 24)
         Me.ProgressBar7.TabIndex = 6
+        Me.ProgressBar7.Tag = "Passing"
         '
         'ProgressBar8
         '
@@ -169,6 +171,7 @@ Partial Class Skills
         Me.ProgressBar8.Name = "ProgressBar8"
         Me.ProgressBar8.Size = New System.Drawing.Size(132, 24)
         Me.ProgressBar8.TabIndex = 7
+        Me.ProgressBar8.Tag = "Vision"
         '
         'ProgressBar9
         '
@@ -176,6 +179,7 @@ Partial Class Skills
         Me.ProgressBar9.Name = "ProgressBar9"
         Me.ProgressBar9.Size = New System.Drawing.Size(132, 24)
         Me.ProgressBar9.TabIndex = 8
+        Me.ProgressBar9.Tag = "Passing Accuracy"
         '
         'ProgressBar11
         '
@@ -183,6 +187,7 @@ Partial Class Skills
         Me.ProgressBar11.Name = "ProgressBar11"
         Me.ProgressBar11.Size = New System.Drawing.Size(132, 24)
         Me.ProgressBar11.TabIndex = 10
+        Me.ProgressBar11.Tag = "Pace"
         '
         'ProgressBar12
         '
@@ -190,6 +195,7 @@ Partial Class Skills
         Me.ProgressBar12.Name = "ProgressBar12"
         Me.ProgressBar12.Size = New System.Drawing.Size(132, 24)
         Me.ProgressBar12.TabIndex = 11
+        Me.ProgressBar12.Tag = "Acceleration"
         '
         'ProgressBar13
         '
@@ -249,7 +255,7 @@ Partial Class Skills
         '
         'Label1
         '
-        Me.Label1.AutoSize = true
+        Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(32, 34)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(41, 13)
@@ -258,7 +264,7 @@ Partial Class Skills
         '
         'Label2
         '
-        Me.Label2.AutoSize = true
+        Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(32, 64)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(33, 13)
@@ -267,7 +273,7 @@ Partial Class Skills
         '
         'Label3
         '
-        Me.Label3.AutoSize = true
+        Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(32, 94)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(29, 13)
@@ -276,7 +282,7 @@ Partial Class Skills
         '
         'Label4
         '
-        Me.Label4.AutoSize = true
+        Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(32, 124)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(111, 13)
@@ -285,7 +291,7 @@ Partial Class Skills
         '
         'Label5
         '
-        Me.Label5.AutoSize = true
+        Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(32, 214)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(44, 13)
@@ -294,7 +300,7 @@ Partial Class Skills
         '
         'Label6
         '
-        Me.Label6.AutoSize = true
+        Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(32, 184)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(115, 13)
@@ -303,7 +309,7 @@ Partial Class Skills
         '
         'Label7
         '
-        Me.Label7.AutoSize = true
+        Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(32, 154)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(122, 13)
@@ -312,7 +318,7 @@ Partial Class Skills
         '
         'Label8
         '
-        Me.Label8.AutoSize = true
+        Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(32, 244)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 13)
@@ -321,7 +327,7 @@ Partial Class Skills
         '
         'Label9
         '
-        Me.Label9.AutoSize = true
+        Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(32, 274)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(92, 13)
@@ -330,7 +336,7 @@ Partial Class Skills
         '
         'Label11
         '
-        Me.Label11.AutoSize = true
+        Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(32, 304)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(32, 13)
@@ -339,7 +345,7 @@ Partial Class Skills
         '
         'Label12
         '
-        Me.Label12.AutoSize = true
+        Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(32, 334)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(66, 13)
@@ -348,7 +354,7 @@ Partial Class Skills
         '
         'Label13
         '
-        Me.Label13.AutoSize = true
+        Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(470, 34)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(81, 13)
@@ -357,7 +363,7 @@ Partial Class Skills
         '
         'Label14
         '
-        Me.Label14.AutoSize = true
+        Me.Label14.AutoSize = True
         Me.Label14.Location = New System.Drawing.Point(32, 364)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(47, 13)
@@ -366,7 +372,7 @@ Partial Class Skills
         '
         'Label15
         '
-        Me.Label15.AutoSize = true
+        Me.Label15.AutoSize = True
         Me.Label15.Location = New System.Drawing.Point(470, 64)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(76, 13)
@@ -375,7 +381,7 @@ Partial Class Skills
         '
         'Label16
         '
-        Me.Label16.AutoSize = true
+        Me.Label16.AutoSize = True
         Me.Label16.Location = New System.Drawing.Point(470, 94)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(49, 13)
@@ -384,7 +390,7 @@ Partial Class Skills
         '
         'Label17
         '
-        Me.Label17.AutoSize = true
+        Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(470, 124)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(65, 13)
@@ -393,7 +399,7 @@ Partial Class Skills
         '
         'Label18
         '
-        Me.Label18.AutoSize = true
+        Me.Label18.AutoSize = True
         Me.Label18.Location = New System.Drawing.Point(470, 154)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(95, 13)
@@ -402,7 +408,7 @@ Partial Class Skills
         '
         'Label19
         '
-        Me.Label19.AutoSize = true
+        Me.Label19.AutoSize = True
         Me.Label19.Location = New System.Drawing.Point(470, 184)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(48, 13)
@@ -411,7 +417,7 @@ Partial Class Skills
         '
         'Label20
         '
-        Me.Label20.AutoSize = true
+        Me.Label20.AutoSize = True
         Me.Label20.Location = New System.Drawing.Point(470, 214)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(59, 13)
@@ -420,7 +426,7 @@ Partial Class Skills
         '
         'Label21
         '
-        Me.Label21.AutoSize = true
+        Me.Label21.AutoSize = True
         Me.Label21.Location = New System.Drawing.Point(335, 9)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(45, 13)
@@ -429,7 +435,7 @@ Partial Class Skills
         '
         'Label22
         '
-        Me.Label22.AutoSize = true
+        Me.Label22.AutoSize = True
         Me.Label22.Location = New System.Drawing.Point(470, 244)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(48, 13)
@@ -450,7 +456,7 @@ Partial Class Skills
         Me.ButAddLayUp.Size = New System.Drawing.Size(23, 21)
         Me.ButAddLayUp.TabIndex = 49
         Me.ButAddLayUp.Text = "+"
-        Me.ButAddLayUp.UseVisualStyleBackColor = true
+        Me.ButAddLayUp.UseVisualStyleBackColor = True
         '
         'ButSubtractLayUp
         '
@@ -459,7 +465,7 @@ Partial Class Skills
         Me.ButSubtractLayUp.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractLayUp.TabIndex = 50
         Me.ButSubtractLayUp.Text = "-"
-        Me.ButSubtractLayUp.UseVisualStyleBackColor = true
+        Me.ButSubtractLayUp.UseVisualStyleBackColor = True
         '
         'ButSubtractDunk
         '
@@ -468,7 +474,7 @@ Partial Class Skills
         Me.ButSubtractDunk.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractDunk.TabIndex = 52
         Me.ButSubtractDunk.Text = "-"
-        Me.ButSubtractDunk.UseVisualStyleBackColor = true
+        Me.ButSubtractDunk.UseVisualStyleBackColor = True
         '
         'ButAddDunk
         '
@@ -477,7 +483,7 @@ Partial Class Skills
         Me.ButAddDunk.Size = New System.Drawing.Size(23, 21)
         Me.ButAddDunk.TabIndex = 51
         Me.ButAddDunk.Text = "+"
-        Me.ButAddDunk.UseVisualStyleBackColor = true
+        Me.ButAddDunk.UseVisualStyleBackColor = True
         '
         'ButSubtractMids
         '
@@ -486,7 +492,7 @@ Partial Class Skills
         Me.ButSubtractMids.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractMids.TabIndex = 54
         Me.ButSubtractMids.Text = "-"
-        Me.ButSubtractMids.UseVisualStyleBackColor = true
+        Me.ButSubtractMids.UseVisualStyleBackColor = True
         '
         'ButAddMids
         '
@@ -495,7 +501,7 @@ Partial Class Skills
         Me.ButAddMids.Size = New System.Drawing.Size(23, 21)
         Me.ButAddMids.TabIndex = 53
         Me.ButAddMids.Text = "+"
-        Me.ButAddMids.UseVisualStyleBackColor = true
+        Me.ButAddMids.UseVisualStyleBackColor = True
         '
         'ButSubtractShotRelease
         '
@@ -504,7 +510,7 @@ Partial Class Skills
         Me.ButSubtractShotRelease.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractShotRelease.TabIndex = 56
         Me.ButSubtractShotRelease.Text = "-"
-        Me.ButSubtractShotRelease.UseVisualStyleBackColor = true
+        Me.ButSubtractShotRelease.UseVisualStyleBackColor = True
         '
         'ButAddShotRelease
         '
@@ -513,7 +519,7 @@ Partial Class Skills
         Me.ButAddShotRelease.Size = New System.Drawing.Size(23, 21)
         Me.ButAddShotRelease.TabIndex = 55
         Me.ButAddShotRelease.Text = "+"
-        Me.ButAddShotRelease.UseVisualStyleBackColor = true
+        Me.ButAddShotRelease.UseVisualStyleBackColor = True
         '
         'ButSubtractInShotAcc
         '
@@ -522,7 +528,7 @@ Partial Class Skills
         Me.ButSubtractInShotAcc.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractInShotAcc.TabIndex = 58
         Me.ButSubtractInShotAcc.Text = "-"
-        Me.ButSubtractInShotAcc.UseVisualStyleBackColor = true
+        Me.ButSubtractInShotAcc.UseVisualStyleBackColor = True
         '
         'ButAddInScoreAcc
         '
@@ -531,7 +537,7 @@ Partial Class Skills
         Me.ButAddInScoreAcc.Size = New System.Drawing.Size(23, 21)
         Me.ButAddInScoreAcc.TabIndex = 57
         Me.ButAddInScoreAcc.Text = "+"
-        Me.ButAddInScoreAcc.UseVisualStyleBackColor = true
+        Me.ButAddInScoreAcc.UseVisualStyleBackColor = True
         '
         'ButSubtract3ptAcc
         '
@@ -540,7 +546,7 @@ Partial Class Skills
         Me.ButSubtract3ptAcc.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtract3ptAcc.TabIndex = 60
         Me.ButSubtract3ptAcc.Text = "-"
-        Me.ButSubtract3ptAcc.UseVisualStyleBackColor = true
+        Me.ButSubtract3ptAcc.UseVisualStyleBackColor = True
         '
         'ButAdd3ptAcc
         '
@@ -549,7 +555,7 @@ Partial Class Skills
         Me.ButAdd3ptAcc.Size = New System.Drawing.Size(23, 21)
         Me.ButAdd3ptAcc.TabIndex = 59
         Me.ButAdd3ptAcc.Text = "+"
-        Me.ButAdd3ptAcc.UseVisualStyleBackColor = true
+        Me.ButAdd3ptAcc.UseVisualStyleBackColor = True
         '
         'ButSubtractPassing
         '
@@ -558,7 +564,7 @@ Partial Class Skills
         Me.ButSubtractPassing.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractPassing.TabIndex = 62
         Me.ButSubtractPassing.Text = "-"
-        Me.ButSubtractPassing.UseVisualStyleBackColor = true
+        Me.ButSubtractPassing.UseVisualStyleBackColor = True
         '
         'ButAddPass
         '
@@ -567,7 +573,7 @@ Partial Class Skills
         Me.ButAddPass.Size = New System.Drawing.Size(23, 21)
         Me.ButAddPass.TabIndex = 61
         Me.ButAddPass.Text = "+"
-        Me.ButAddPass.UseVisualStyleBackColor = true
+        Me.ButAddPass.UseVisualStyleBackColor = True
         '
         'ButSubtractVision
         '
@@ -576,7 +582,7 @@ Partial Class Skills
         Me.ButSubtractVision.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractVision.TabIndex = 64
         Me.ButSubtractVision.Text = "-"
-        Me.ButSubtractVision.UseVisualStyleBackColor = true
+        Me.ButSubtractVision.UseVisualStyleBackColor = True
         '
         'ButAddVision
         '
@@ -585,7 +591,7 @@ Partial Class Skills
         Me.ButAddVision.Size = New System.Drawing.Size(23, 21)
         Me.ButAddVision.TabIndex = 63
         Me.ButAddVision.Text = "+"
-        Me.ButAddVision.UseVisualStyleBackColor = true
+        Me.ButAddVision.UseVisualStyleBackColor = True
         '
         'ButSubtractPassAcc
         '
@@ -594,7 +600,7 @@ Partial Class Skills
         Me.ButSubtractPassAcc.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractPassAcc.TabIndex = 66
         Me.ButSubtractPassAcc.Text = "-"
-        Me.ButSubtractPassAcc.UseVisualStyleBackColor = true
+        Me.ButSubtractPassAcc.UseVisualStyleBackColor = True
         '
         'ButAddPassAcc
         '
@@ -603,7 +609,7 @@ Partial Class Skills
         Me.ButAddPassAcc.Size = New System.Drawing.Size(23, 21)
         Me.ButAddPassAcc.TabIndex = 65
         Me.ButAddPassAcc.Text = "+"
-        Me.ButAddPassAcc.UseVisualStyleBackColor = true
+        Me.ButAddPassAcc.UseVisualStyleBackColor = True
         '
         'ButSubtractPace
         '
@@ -612,7 +618,7 @@ Partial Class Skills
         Me.ButSubtractPace.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractPace.TabIndex = 70
         Me.ButSubtractPace.Text = "-"
-        Me.ButSubtractPace.UseVisualStyleBackColor = true
+        Me.ButSubtractPace.UseVisualStyleBackColor = True
         '
         'ButAddPace
         '
@@ -621,7 +627,7 @@ Partial Class Skills
         Me.ButAddPace.Size = New System.Drawing.Size(23, 21)
         Me.ButAddPace.TabIndex = 69
         Me.ButAddPace.Text = "+"
-        Me.ButAddPace.UseVisualStyleBackColor = true
+        Me.ButAddPace.UseVisualStyleBackColor = True
         '
         'ButSubtractAccelerate
         '
@@ -630,7 +636,7 @@ Partial Class Skills
         Me.ButSubtractAccelerate.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractAccelerate.TabIndex = 72
         Me.ButSubtractAccelerate.Text = "-"
-        Me.ButSubtractAccelerate.UseVisualStyleBackColor = true
+        Me.ButSubtractAccelerate.UseVisualStyleBackColor = True
         '
         'ButAddAccelerate
         '
@@ -639,7 +645,7 @@ Partial Class Skills
         Me.ButAddAccelerate.Size = New System.Drawing.Size(23, 21)
         Me.ButAddAccelerate.TabIndex = 71
         Me.ButAddAccelerate.Text = "+"
-        Me.ButAddAccelerate.UseVisualStyleBackColor = true
+        Me.ButAddAccelerate.UseVisualStyleBackColor = True
         '
         'ButSubtractStrength
         '
@@ -648,7 +654,7 @@ Partial Class Skills
         Me.ButSubtractStrength.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractStrength.TabIndex = 74
         Me.ButSubtractStrength.Text = "-"
-        Me.ButSubtractStrength.UseVisualStyleBackColor = true
+        Me.ButSubtractStrength.UseVisualStyleBackColor = True
         '
         'ButAddStrength
         '
@@ -657,7 +663,7 @@ Partial Class Skills
         Me.ButAddStrength.Size = New System.Drawing.Size(23, 21)
         Me.ButAddStrength.TabIndex = 73
         Me.ButAddStrength.Text = "+"
-        Me.ButAddStrength.UseVisualStyleBackColor = true
+        Me.ButAddStrength.UseVisualStyleBackColor = True
         '
         'ButSubtractJumpReach
         '
@@ -666,7 +672,7 @@ Partial Class Skills
         Me.ButSubtractJumpReach.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractJumpReach.TabIndex = 76
         Me.ButSubtractJumpReach.Text = "-"
-        Me.ButSubtractJumpReach.UseVisualStyleBackColor = true
+        Me.ButSubtractJumpReach.UseVisualStyleBackColor = True
         '
         'ButAddJumpReach
         '
@@ -675,7 +681,7 @@ Partial Class Skills
         Me.ButAddJumpReach.Size = New System.Drawing.Size(23, 21)
         Me.ButAddJumpReach.TabIndex = 75
         Me.ButAddJumpReach.Text = "+"
-        Me.ButAddJumpReach.UseVisualStyleBackColor = true
+        Me.ButAddJumpReach.UseVisualStyleBackColor = True
         '
         'ButSubtractJumpAbil
         '
@@ -684,7 +690,7 @@ Partial Class Skills
         Me.ButSubtractJumpAbil.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractJumpAbil.TabIndex = 78
         Me.ButSubtractJumpAbil.Text = "-"
-        Me.ButSubtractJumpAbil.UseVisualStyleBackColor = true
+        Me.ButSubtractJumpAbil.UseVisualStyleBackColor = True
         '
         'ButAddJumpAbility
         '
@@ -693,7 +699,7 @@ Partial Class Skills
         Me.ButAddJumpAbility.Size = New System.Drawing.Size(23, 21)
         Me.ButAddJumpAbility.TabIndex = 77
         Me.ButAddJumpAbility.Text = "+"
-        Me.ButAddJumpAbility.UseVisualStyleBackColor = true
+        Me.ButAddJumpAbility.UseVisualStyleBackColor = True
         '
         'ButSubtractHands
         '
@@ -702,7 +708,7 @@ Partial Class Skills
         Me.ButSubtractHands.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractHands.TabIndex = 80
         Me.ButSubtractHands.Text = "-"
-        Me.ButSubtractHands.UseVisualStyleBackColor = true
+        Me.ButSubtractHands.UseVisualStyleBackColor = True
         '
         'ButAddHands
         '
@@ -711,7 +717,7 @@ Partial Class Skills
         Me.ButAddHands.Size = New System.Drawing.Size(23, 21)
         Me.ButAddHands.TabIndex = 79
         Me.ButAddHands.Text = "+"
-        Me.ButAddHands.UseVisualStyleBackColor = true
+        Me.ButAddHands.UseVisualStyleBackColor = True
         '
         'ButSubtractAnticiptate
         '
@@ -720,7 +726,7 @@ Partial Class Skills
         Me.ButSubtractAnticiptate.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractAnticiptate.TabIndex = 82
         Me.ButSubtractAnticiptate.Text = "-"
-        Me.ButSubtractAnticiptate.UseVisualStyleBackColor = true
+        Me.ButSubtractAnticiptate.UseVisualStyleBackColor = True
         '
         'ButAddAnticiptate
         '
@@ -729,7 +735,7 @@ Partial Class Skills
         Me.ButAddAnticiptate.Size = New System.Drawing.Size(23, 21)
         Me.ButAddAnticiptate.TabIndex = 81
         Me.ButAddAnticiptate.Text = "+"
-        Me.ButAddAnticiptate.UseVisualStyleBackColor = true
+        Me.ButAddAnticiptate.UseVisualStyleBackColor = True
         '
         'ButSubtractReact
         '
@@ -738,7 +744,7 @@ Partial Class Skills
         Me.ButSubtractReact.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractReact.TabIndex = 84
         Me.ButSubtractReact.Text = "-"
-        Me.ButSubtractReact.UseVisualStyleBackColor = true
+        Me.ButSubtractReact.UseVisualStyleBackColor = True
         '
         'ButAddReact
         '
@@ -747,7 +753,7 @@ Partial Class Skills
         Me.ButAddReact.Size = New System.Drawing.Size(23, 21)
         Me.ButAddReact.TabIndex = 83
         Me.ButAddReact.Text = "+"
-        Me.ButAddReact.UseVisualStyleBackColor = true
+        Me.ButAddReact.UseVisualStyleBackColor = True
         '
         'ButSubtractDefence
         '
@@ -756,7 +762,7 @@ Partial Class Skills
         Me.ButSubtractDefence.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractDefence.TabIndex = 86
         Me.ButSubtractDefence.Text = "-"
-        Me.ButSubtractDefence.UseVisualStyleBackColor = true
+        Me.ButSubtractDefence.UseVisualStyleBackColor = True
         '
         'ButAddDef
         '
@@ -765,7 +771,7 @@ Partial Class Skills
         Me.ButAddDef.Size = New System.Drawing.Size(23, 21)
         Me.ButAddDef.TabIndex = 85
         Me.ButAddDef.Text = "+"
-        Me.ButAddDef.UseVisualStyleBackColor = true
+        Me.ButAddDef.UseVisualStyleBackColor = True
         '
         'ButSubtractWork
         '
@@ -774,7 +780,7 @@ Partial Class Skills
         Me.ButSubtractWork.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractWork.TabIndex = 88
         Me.ButSubtractWork.Text = "-"
-        Me.ButSubtractWork.UseVisualStyleBackColor = true
+        Me.ButSubtractWork.UseVisualStyleBackColor = True
         '
         'ButAddWork
         '
@@ -783,7 +789,7 @@ Partial Class Skills
         Me.ButAddWork.Size = New System.Drawing.Size(23, 21)
         Me.ButAddWork.TabIndex = 87
         Me.ButAddWork.Text = "+"
-        Me.ButAddWork.UseVisualStyleBackColor = true
+        Me.ButAddWork.UseVisualStyleBackColor = True
         '
         'ButSubtractBlock
         '
@@ -792,7 +798,7 @@ Partial Class Skills
         Me.ButSubtractBlock.Size = New System.Drawing.Size(23, 21)
         Me.ButSubtractBlock.TabIndex = 90
         Me.ButSubtractBlock.Text = "-"
-        Me.ButSubtractBlock.UseVisualStyleBackColor = true
+        Me.ButSubtractBlock.UseVisualStyleBackColor = True
         '
         'ButAddBlock
         '
@@ -801,14 +807,14 @@ Partial Class Skills
         Me.ButAddBlock.Size = New System.Drawing.Size(23, 21)
         Me.ButAddBlock.TabIndex = 89
         Me.ButAddBlock.Text = "+"
-        Me.ButAddBlock.UseVisualStyleBackColor = true
+        Me.ButAddBlock.UseVisualStyleBackColor = True
         '
         'Timer1
         '
         '
         'Label10
         '
-        Me.Label10.AutoSize = true
+        Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(604, 300)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(61, 13)
@@ -823,21 +829,11 @@ Partial Class Skills
         Me.TxtCredits.TabIndex = 92
         Me.TxtCredits.Text = "200"
         '
-        'butSave
-        '
-        Me.butSave.Location = New System.Drawing.Point(632, 383)
-        Me.butSave.Name = "butSave"
-        Me.butSave.Size = New System.Drawing.Size(75, 23)
-        Me.butSave.TabIndex = 93
-        Me.butSave.Text = "Save"
-        Me.butSave.UseVisualStyleBackColor = true
-        '
         'Skills
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(806, 477)
-        Me.Controls.Add(Me.butSave)
         Me.Controls.Add(Me.TxtCredits)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.ButSubtractBlock)
@@ -1011,5 +1007,4 @@ End Sub
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents TxtCredits As System.Windows.Forms.TextBox
-    Friend WithEvents butSave As System.Windows.Forms.Button
 End Class
