@@ -106,3 +106,25 @@ D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\D
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Skills.resources
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Stats.resources
 D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.vbproj.GenerateResource.Cache
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.exe.config
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.exe
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.xml
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.pdb
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\bin\Debug\League.accdb
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.exe
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.pdb
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\bin\Debug\Aspiring Rookie - Basketball.xml
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.vbprojResolveAssemblyReference.cache
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Awards.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Form1.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Game_Box.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.ItemsOwned.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.LeagueTable.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Resources.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Name.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Shop.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Skills.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring_Rookie___Basketball.Stats.resources
+C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\obj\x86\Debug\Aspiring Rookie - Basketball.vbproj.GenerateResource.Cache

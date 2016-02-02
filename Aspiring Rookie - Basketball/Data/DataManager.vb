@@ -4,9 +4,9 @@ Imports Newtonsoft.Json
 
 Namespace Data
     Public Module DataManager
-        Private Const ShopItemsListLocation As String = "D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\Data\GameConfig\ShopItems.json"
-        Private Const TeamListLocation As String = "D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\Data\CurrentGame\Teams.json"
-        Private Const NewTeamListLocation As String = "D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\Data\GameConfig\NewTeams.json"
+        Private Const ShopItemsListLocation As String = "C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\Data\GameConfig\ShopItems.json"
+        Private Const TeamListLocation As String = "C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\Data\CurrentGame\Teams.json"
+        Private Const NewTeamListLocation As String = "C:\Users\Mayowa\Documents\Basketball-Game\Aspiring Rookie - Basketball\Data\GameConfig\NewTeams.json" '"D:\Documents\Aspiring Rookie - Basketball\Aspiring Rookie - Basketball\Data\GameConfig\NewTeams.json"
 
         Public Function GetAllShopItems() As List(Of ShopItem)
             Dim json As String = File.ReadAllText(ShopItemsListLocation)
